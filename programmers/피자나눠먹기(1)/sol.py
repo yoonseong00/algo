@@ -7,8 +7,8 @@ def solution(n):
         answer = 1
         
         if n % 7 ==0:
-            answer = answer + (n//7) - 1
-        elif (n // 7) > 1:
+            answer = answer + (n//7) - 1  #사람 수가 만약 7의 배수는 한판을 추가하지 않아도 된다.
+        elif (n // 7) > 1:                #만약 21명의 사람이 피자를 먹는다고 할 때, 첫 번째 줄 if 문이 없으면 한판을 더 가져가게 되는 오류가 발생
             answer = answer + (n//7)
         else:
             answer = 1
