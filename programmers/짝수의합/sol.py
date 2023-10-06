@@ -9,5 +9,3 @@ def solution(n):
              continue
     
     return answer
-
-print(solution(4))
