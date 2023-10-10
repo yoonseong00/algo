@@ -3,6 +3,8 @@ def solution(my_string):
       
     for c in my_string:
         answer = c + answer
+
+
                
     return answer
 
