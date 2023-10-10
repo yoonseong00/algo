@@ -1,11 +1,20 @@
-def solution(my_string, letter):
+# def solution(my_string, letter):
     
-    answer = my_string
+#     answer = ''
 
-    for char in my_string:
-        if char in letter:
-            answer = answer.replace(char, '')
+#     answer = my_string.replace(letter,'') 
         
+#     return answer
+
+def solution(my_string, letter):
+    answer = ''
+
+    for string in my_string:
+        if string != letter:
+            answer += string
+
     return answer
+
+
 
 print(solution('abcdef', 'f'))
