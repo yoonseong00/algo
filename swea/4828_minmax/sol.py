@@ -9,15 +9,15 @@ for tc in range(1, T+1):
 
     numbers = list(map(int, input().split()))
 
-    # min_number = 100000000000
-    min_number = numbers[0]
-    # max_number = 0
-    max_number = numbers[0]
+    min_number = 100000000000
+    # min_number = numbers[0]
+    max_number = 0
+    # max_number = numbers[0]
 
     for num in numbers:
         if num < min_number:
             min_number = num
-        else:
+        if num > min_number:
             max_number = num
 
     result = max_number - min_number
