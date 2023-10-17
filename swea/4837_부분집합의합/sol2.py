@@ -23,7 +23,6 @@ for tc in range(1, T+1):
 
         if len(temp) == N and sum(temp) ==K:
             count += 1
-        
-    
+
 
     print(f'#{tc} {count}')
