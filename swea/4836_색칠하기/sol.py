@@ -10,7 +10,7 @@ for tc in range(1, T+1):
     count = 0
 
     for i in range(1, N+1):
-        row1, col1, row2, col2, color = map(int, input().split())
+        row1, col1, row2, col2, c olor = map(int, input().split())
 
         for row in range(row1, row2+1): # 행과열 생성
             for col in range(col1, col2+1):
@@ -30,6 +30,3 @@ for tc in range(1, T+1):
                         count += 1
     
     print(f'#{tc} {count}')
-
-            
-
