@@ -8,9 +8,7 @@ def solution(n):
             if i % j == 0:
                 count += 1
         if count >= 3:
-            answer += 1
-                
-
+            answer += 1        
 
     return answer
 

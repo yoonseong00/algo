@@ -10,7 +10,7 @@ for tc in range(1 ,T+1):
 
     nodes = [[0 for _ in range(V+1)] for _ in range(V+1)]
 
-    for _ in range(E):
+    for _ in range(E):  # E(간선 수)만큼의 데이터를 nodes에 저장
         node = list(map(int, input().split()))
         start = node[0]
         end = node[1]
@@ -24,7 +24,8 @@ for tc in range(1 ,T+1):
     # nodes => 그래프 표현 (인접행렬)
 
     # 방문 체크리스트
-    check_list = [False] * (V+1) # F로 나열된 리스트에 방문을 했으면 F를 True 바꿔줌
+    # V+1이 나온 이유: 인덱스는 0번부터 시작인데 계산할 때 V를 범위로 지정하게 되면 0~N-1칸으로 나와 인덱스 0은 사용 안하지만 계산을 용이하게 하기 위해 설정
+    check_list = [False] * (V+1) # F로 나열된 리스트에 방문을 했으면 F를 True 바꿔줌 ex)[F,F,F,F,F,F,F]
 
     #dfs 용 스택
     stack = []
