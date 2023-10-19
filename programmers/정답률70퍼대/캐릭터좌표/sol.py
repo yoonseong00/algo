@@ -8,7 +8,7 @@ def solution(keyinput, board):
 
     for i in keyinput:
 
-        if i == 'left':
+        if i == 'left': 
             x -= 1
         if i == 'right':
             x += 1
@@ -28,9 +28,6 @@ def solution(keyinput, board):
             y += 1
 
     result = [x, y]
-
-
-
 
     return result
 
