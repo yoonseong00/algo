@@ -40,21 +40,17 @@ def solution(lines):
     if len(answer3) >= 2:
         for i in answer3:
             result.append(i)
-    if len(answer4) >= 2:
-        for i in answer4:
-            result.append(i)
         
 
-    # 결과값에 값이 중복되면 안되니까 set             ---> 아 시이이이이이이이이이이이이발 이게 문제였네
-    res = set(result)
+    # 결과값에 값이 중복되면 안되니까 set
 
     answer = 0
     # res에 값이 있다면
-    if len(res) + len(answer4)> 0:
-        if len(res) + len(answer4) % 2 == 0:           #만약 길이가 짝수면 절반 만큼이 걸친건 절반이 길이
+    if len(res) > 0:
+        if len(res) % 2 == 0:           #만약 길이가 짝수면 절반 만큼이 걸친건 절반이 길이
             answer += (len(res) // 2)
         else:
-         answer += len(res) + len(answer4) -1
+         answer += len(res) +  -1
 
     return answer
     
