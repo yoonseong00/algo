@@ -14,7 +14,7 @@ def solution(s, n):
         # 앞에 있는 상황에 다 안걸리면 소문자
         else:
             plus = up.find(i) + n
-            answer.append(up[plus % len(up)])
+            answer.append(low[plus % len(up)])
 
     return ''.join(answer)
 
