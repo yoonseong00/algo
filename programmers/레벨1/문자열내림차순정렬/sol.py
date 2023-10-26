@@ -20,8 +20,8 @@ def solution(s):
 
     answer = b + a
 
-    # return ''.join(answer)
-    return answer
+    return ''.join(answer)
+
             
 
 print(solution("Zbcdefg"))
